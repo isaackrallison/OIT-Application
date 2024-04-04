@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- html header information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Numeral Converter</title>
+</head>
+<body>
+    <h1>Roman Numberal Converter</h1>
+    <!-- input box activating post method when convert is clicked -->
+    <form action="/post" method="POST">
+        <label for="rNumeral"> Roman Numeral: </label>
+        <input type="text" id="rNumeral" name="rNumeral" placeholder="right here!">
+        <input type="submit" value="convert">
+    </form>
+    <!-- outputs from python code -->
+    <p>Decimal Conversion: {{ result }}</p>
+    <p>verified: {{ confirmed }}</p>
+</body>
+</html>
